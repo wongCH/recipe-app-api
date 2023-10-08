@@ -1,7 +1,4 @@
 version: 0.2
-env:
-  secrets-manager:
-    SECRET_VALUE: arn:aws:secretsmanager:ap-southeast-1:637953499739:secret:recipe-api-app/uat/dockerhub_token-ggqfBd:DOCKERHUB_TOKEN
 phases:
   install:
     runtime-versions:
@@ -13,8 +10,7 @@ phases:
   pre_build:
     commands:
       - echo Entered the pre_build phase...
-      - echo $SECRET_VALUE
-      - echo $DOCKERHUB_TOKEN
+      - echo Loging into Docker Hub
       - echo "$DOCKERHUB_TOKEN" | docker login --username $DOCKERHUB_USER --password-stdin
 
     finally:
