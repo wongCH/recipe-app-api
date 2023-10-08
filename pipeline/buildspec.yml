@@ -11,7 +11,7 @@ phases:
   pre_build:
     commands:
       - echo Entered the pre_build phase...
-      - echo $DOCKERHUB_TOKEN
+      - echo $DOCKERHUB_TOKEN.DOCKERHUB_TOKEN
       - echo "$DOCKERHUB_TOKEN" | docker login --username $DOCKERHUB_USER --password-stdin
 
     finally:
