@@ -16,8 +16,8 @@ phases:
       - echo This always runs even if the login command fails 
   build:
     commands:
-      - echo Entered the build phase...
-      - echo Build started on `date`
+      - docker-compose run --rm app sh -c "python manage.py"
+      - docker-compose run --rm app sh -c "flake8"
     finally:
       - echo This always runs even if the install command fails
   post_build:
