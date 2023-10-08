@@ -1,0 +1,21 @@
+#DOCKER
+.docker
+.dockerignore
+
+# Python
+app/__pycache__/
+app/*/__pycache__/
+app/*/*/__pycache__/
+app/*/*/*/__pycache__/
+.env/
+.venv/
+venv/
+
+__init__.py
+app/app/*
+
+db.sqlite3
+=*
+manage.py
+.flake8
+
