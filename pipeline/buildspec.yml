@@ -1,7 +1,7 @@
 version: 0.2
 env:
   secrets-manager:
-    SECRET_VALUE: arn:aws:secretsmanager:ap-southeast-1:637953499739:secret:recipe-api-app/uat/dockerhub_token-ggqfBd
+    SECRET_VALUE: arn:aws:secretsmanager:ap-southeast-1:637953499739:secret:recipe-api-app/uat/dockerhub_token-ggqfBd:DOCKERHUB_TOKEN
 phases:
   install:
     runtime-versions:
