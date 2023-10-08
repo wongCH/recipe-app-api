@@ -11,8 +11,7 @@ phases:
   pre_build:
     commands:
       - echo Entered the pre_build phase...
-      - echo $DOCKERHUB_USER
-      - echo $DOCKERHUB_TOKEN
+      - docker login --username $DOCKERHUB_TOKEN
     finally:
       - echo This always runs even if the login command fails 
   build:
