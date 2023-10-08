@@ -11,9 +11,6 @@ app/*/*/*/__pycache__/
 .venv/
 venv/
 
-__init__.py
-
-
 db.sqlite3
 =*
 
