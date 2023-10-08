@@ -17,5 +17,3 @@ __init__.py
 db.sqlite3
 =*
 
-.flake8
-
