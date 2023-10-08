@@ -12,10 +12,10 @@ app/*/*/*/__pycache__/
 venv/
 
 __init__.py
-app/app/*
+
 
 db.sqlite3
 =*
-manage.py
+
 .flake8
 
