@@ -37,7 +37,7 @@ ENV PATH="/py/bin:$PATH"
 
 
 FROM gcr.io/distroless/python3-debian9
-COPY --from=build-env /app /app
+COPY --from=build-env . /app
  
 COPY --from=build-env /usr/bin/libreoffice/ /usr/bin/
 COPY --from=build-env /usr/share/libreoffice /usr/share/
