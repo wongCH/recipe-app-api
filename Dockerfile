@@ -1,5 +1,5 @@
-FROM python:3.9-alpine3.13
-#FROM public.ecr.aws/docker/library/python:3.9-alpine3.13
+#FROM python:3.9-alpine3.13
+FROM public.ecr.aws/docker/library/python:3.9-alpine3.13
 
 
 LABEL maintainer="wong.hun@gmail.com"
@@ -33,4 +33,4 @@ RUN python -m venv /py && \
     
 ENV PATH="/py/bin:$PATH"
 
-#USER django-user
+USER django-user
