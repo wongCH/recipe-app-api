@@ -25,3 +25,7 @@ phases:
     commands:
       - echo Entered the post_build phase...
       - echo Build completed on `date`
+      - aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws/x9u5b6u1
+      - docker build -t recipe-api .
+      - docker tag recipe-api:latest public.ecr.aws/x9u5b6u1/recipe-api:latest
+      - docker push public.ecr.aws/x9u5b6u1/recipe-api:latest
