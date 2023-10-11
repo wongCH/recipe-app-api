@@ -60,3 +60,4 @@ ENV PYTHONPATH=/usr/local/lib/python3.9/site-packages
 EXPOSE 8000 
 
 #USER django-user
+ENTRYPOINT ["/usr/local/bin/python"]
