@@ -29,3 +29,5 @@ phases:
       - docker build -t recipe-api .
       - docker tag recipe-api:latest public.ecr.aws/x9u5b6u1/recipe-api:latest
       - docker push public.ecr.aws/x9u5b6u1/recipe-api:latest
+      - docker tagrecipe-api:latest public.ecr.aws/x9u5b6u1/recipe-api:1.0
+      - docker push public.ecr.aws/x9u5b6u1/recipe-api:1.0
